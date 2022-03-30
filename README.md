@@ -127,7 +127,7 @@ Bisogna avere installati sul proprio computer i moduli python: pygame, sys, rand
     l’utente inserisce un range di valori di y e il metodo trova il corrispondente 
     valore di x per ogni y attraverso il metodo “trovaX”. Successivamente inserisce le coordinate dei punti trovati in quel range di y all’interno di una lista di tuple.
     
-## *Salvataggio dati*
+## *Utilizzo dei concetti matematici*
 
 Il gruppo intende utilizzare i concetti della teoria matematica acquisita fino ad ora, per la creazione di una breve animazione prepartita presente all’inizio del gioco. La teoria matematica, viene quindi applicata esclusivamente nella prima scena del gioco, descritta accuratamente nella parte iniziale di questo documento, L’animazione prepartita, mostrerà l’astronave aliena, che si sposta lungo la lista dei punti dell’equazione della conica digitata dall'utente, prima di procedere con la fase di “gameplay” del gioco.
 
