@@ -9,28 +9,28 @@
 
 - Di Gennaro: **Creazione diagramma di flusso e gestione del file README.md**
 
-## **Organizzazione del gruppo:**
+## **Organizzazione del gruppo**
 
-*Prima di andare a lavorare effettivamente sul codice abbiamo stabilito dei giorni e degli orari precisi dove ci saremmo
+*Prima di lavorare sul codice abbiamo stabilito dei giorni e degli orari precisi dove ci saremmo
 potuti vedere su Google Meet, questo per avere un'organizzazione più efficace e pulita.*
 
-Come si è potuto notare, bene o male tutti quanti abbiamo lo stesso ruolo, ma c'è da dire che, in realtà, durante una riunione Meet ognuno ha un ruolo ben preciso in cui spesso ci si alterna.
+Come si è potuto notare, all'interno del gruppo tutti quanti abbiamo lo stesso ruolo, ma bisogna dire che, in realtà, durante una riunione Meet ognuno ha un ruolo ben preciso in cui spesso ci si alterna.
 
-- C'è chi, qualora ce ne fosse la necessità, presenta da Youtube un video che potrebbe aiutarci ulteriormente nella realizzazione del codice.
-- C'è chi scrive un file ReadMe per spiegare come ci siamo organizzati.
-- C'è chi lavora sul codice e lo presenta per rendere tutti partecipi nel lavoro..
+- Uno dei membri del gruppo, qualora ce ne fosse la necessità, presenta da Youtube un video che potrebbe aiutarci ulteriormente nella realizzazione del codice.
+- Un altro membro si occupa della stesura di un file ReadMe per spiegare come ci siamo organizzati.
+- La restante parte del gruppo lavora sul codice e lo presenta per rendere tutti partecipi nel lavoro..
 ***
 
 # Alla conquista di Saturno
 
-## **Descrizione del gioco:**
+## **Descrizione del gioco**
 
-### *Abstract (descrizione delle caratteristiche del gioco):*
+### *Abstract (descrizione delle caratteristiche del gioco)*
 
 È un gioco arcade 2D ambientato nello spazio, dove l’utente impersonifica degli alieni, a comando di una navicella spaziale, che vogliono conquistare un nuovo pianeta. La loro scelta ricade su Saturno e si dirigono verso di esso. La traiettoria della navicella è decisa dall'utente, il quale seleziona una conica tra la retta e la parabola e successivamente inserisce un’equazione della conica selezionata. La navicella si muoverà lungo la lista dei punti appartenenti alla conica e arriverà nei pressi di Saturno. 
 A questo punto la navicella dovrà schivare i detriti che compongono gli anelli di Saturno, affinché possa raggiungere la superficie del pianeta. Le abilità del pilota porteranno alla buona o alla cattiva riuscita della missione aliena. 
 
-### *Interfaccia:*
+### *Interfaccia*
 
 Nella prima scena del gioco compare sullo schermo l’astronave aliena su uno sfondo spaziale ed un pop up che chiede all’utente di selezionare una conica da un elenco che gli viene mostrato. Una volta selezionata la conica, all’utente viene chiesto di inserire i parametri dell’equazione della conica selezionata, all'interno di una barra di testo che comparirà successivamente sullo schermo. L’astronave comincerà a muoversi lungo la lista di punti che compongono la conica data in input dall’utente, finché essa non uscirà dallo schermo. Successivamente comparirà sullo schermo, un altro pop up che indica all’utente di digitare il tasto spazio per proseguire con la seconda scena del gioco.
 
@@ -43,49 +43,49 @@ In alto a sinistra sullo schermo, sarà visibile un contatore, che riporterà il
 
 ### *Requisiti*
 
-#### *Concetti teorici:*
+#### *Concetti teorici*
 
 Conoscenza delle caratteristiche delle coniche (in particolare retta e parabola) e della forma delle loro equazioni.
 
-#### *Software:*
+#### *Software*
 
 Bisogna possedere python e un suo interprete sul proprio computer.
 
-#### *Moduli python:*
+#### *Moduli python*
 
 Bisogna avere installati sul proprio computer i moduli python: pygame, sys, random,
 (possibili altri moduli che probabilmente ci serviranno ma di cui adesso non siamo a conoscenza).
 
-## *Preconcetti matematici:*
+## *Preconcetti matematici*
 
-### *Tutti i metodi della classe retta:*
+### *Tutti i metodi della classe retta*
 
-#### *eqImplicita:*
+#### *eqImplicita*
 
 	in base ai valori dei parametri (a, b, c) ricava l’equazione implicita del tipo 
 	ax + by + c = 0.
 
-#### *eqEsplicita:*
+#### *eqEsplicita*
 
 	in base al valore dei parametri (a, b, c) ricava l’equazione esplicita del tipo 
 	y = (-a/b)x + (-c/b) dove (-a/b) è il coefficiente angolare e (-c/b) è l’intercetta.
 
-#### *trovaY:*
+#### *trovaY*
 
 	presi i valori di a, b, c e x trova il valore di y. Questo metodo è implementato nel
 	metodo “punti”.
 
-#### *punti:*
+#### *punti*
 
     l’utente inserisce un range di valori di x e il metodo trova i corrispondenti valori di y
     attraverso il metodo “trovaY”. Successivamente inserisce le coordinate dei punti
     trovati in quel range di x all’interno di una lista di tuple
 
-#### *m (coefficiente angolare):*
+#### *m (coefficiente angolare)*
 
 	dati i valori dei parametri (a, b) ricava il valore del coefficiente angolare (m) tramite 	la formula m = -a/b.
 
-#### *intersezione:*
+#### *intersezione*
 
     se coefficiente angolare (m) e intercetta (q) delle due equazioni sono uguali allora le rette sono coincidenti (hanno tutti i punti in comune).
     Se il coefficiente angolare è uguale mentre l’intercetta è diversa allora non ci sono punti di intersezione in quanto le rette sono parallele.
@@ -94,31 +94,31 @@ Bisogna avere installati sul proprio computer i moduli python: pygame, sys, rand
 
 ### *Tutti i metodi della classe parabola*
 
-#### *fuoco:*
+#### *fuoco*
 
     Se l’asse di simmetria della parabola è parallelo all’asse delle ordinate allora le
     coordinate del fuoco saranno (-b/2a ; 1-Δ/4a);
     Se l’asse di simmetria della parabola è parallelo all’asse delle ascisse allora le
     coordinate del fuoco saranno (1-Δ/4a ; -b/2a).
 
-#### *direttrice:*
+#### *direttrice*
 
 	Se l’asse di simmetria della parabola è parallelo all’asse delle ordinate allora l’
     equazione della direttrice sarà y = -1-Δ/4a;
     Se l’asse di simmetria della parabola è parallelo all’asse delle ascisse allora l’
     equazione della direttrice sarà x = -1-Δ/4a.
 
-#### *trovaY:*
+#### *trovaY*
 
 	presi i valori di a, b, c e x trova il valore/valori (a seconda dell’asse di simmetria) di y.
     Questo metodo è implementato nel metodo “punti”.
 
-#### *trovaX:*
+#### *trovaX*
 
 	presi i valori di a, b, c e y trova il valore/valori (a seconda dell’asse di simmetria) di x.
     Questo metodo è implementato nel metodo “punti”.
 
-#### *punti:*
+#### *punti*
 
 	Se l’asse della parabola è parallelo all’asse delle ordinate:
     l’utente inserisce un range di valori di x e il metodo trova il corrispondente 
