@@ -159,3 +159,16 @@ Bisogna avere installati sul proprio computer i moduli python: pygame, pgzero, r
 	Se l’asse della parabola è parallelo all’asse delle ascisse:
     l’utente inserisce un range di valori di y e il metodo trova il corrispondente 
     valore di x per ogni y attraverso il metodo “trovaX”. Successivamente inserisce le coordinate dei punti trovati in quel range di y all’interno di una lista di tuple.
+    
+## *Salvataggio dati*
+
+Il gruppo si propone di creare una parte relativa al salvataggio remoto dei dati per poter implementare un eventuale classifica online o una modalità “multigiocatore”.
+I dati che si ipotizzano di salvare, sono quelli relativi ai punteggi di fine partita in modo da creare una classifica online, dove è registrato il punteggio migliore di ogni utente.
+Nel caso un utente giocasse più partite, con punteggi differenti, la classifica registrerebbe solo il punteggio più alto, che si aggiornerebbe solo nel caso in cui l'utente totalizzasse un punteggio superiore.
+
+
+
+
+
+
+
