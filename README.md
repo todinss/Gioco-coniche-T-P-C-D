@@ -5,7 +5,7 @@
 
 - Todino: **Gestione e realizzazione del software, creazione e modifica del diagramma di flusso, creazione e modifica della descrizione del gioco e addetto ad aggiornare il file README.md**
 - Pala: **Gestione e realizzazione del software, addetto ad aggiornare il file changelog.md e addetto ai preconcetti matematici.**
-- Carotenuto: **Gestione e realizzazione del software, addetto ad aggiornare il file .md, creazione del changhelog e addetto alla modifica delle immagini su Adobe Photoshop**
+- Carotenuto: **Gestione e realizzazione del software, addetto ad aggiornare il file .md, creazione del changelog e addetto alla modifica delle immagini su Adobe Photoshop**
 
 - Di Gennaro: **Creazione diagramma di flusso e gestione del file README.md**
 
